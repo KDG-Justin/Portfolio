@@ -1,6 +1,6 @@
 # Portfolio – Justin van Leuvenum
 
-Personal portfolio website showcasing my work as a Front-End / Full-Stack Developer.  
+Personal portfolio Windows 11 based website showcasing my work as a Front-End / Full-Stack Developer.  
 Built with modern web technologies and focused on performance, accessibility, and clean code.
 
 ---
