@@ -1,5 +1,5 @@
 import { DesktopGrid } from "../DesktopGrid";
-import { FooterComponent } from "../FooterComponent";
+import { FooterComponent } from "../footer/FooterComponent";
 
 export function HomeScreen() {
   return (

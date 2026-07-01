@@ -1,4 +1,4 @@
-import { FooterComponent } from "../FooterComponent";
+import { FooterComponent } from "../footer/FooterComponent";
 import { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import cvPdf from './../../assets/CV_Justin.pdf';

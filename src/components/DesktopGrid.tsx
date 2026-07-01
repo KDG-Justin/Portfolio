@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 export function DesktopGrid() {
   const desktopItems = [
     { id: 1, name: "CV_JustinVanLeuvenum.pdf", icon: "/pdf-logo.png", linkTo: "cv" },
+    { id: 2, name: "AboutMe.txt", icon: "/txt-file.png", linkTo: "about" }
   ];
 
 

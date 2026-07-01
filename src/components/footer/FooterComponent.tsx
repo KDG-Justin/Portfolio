@@ -26,9 +26,8 @@ export function FooterComponent() {
           />
         </div>
       </div>
-
       <div />
-
+      
       <ul className="flex items-center gap-1 list-none text-sm">
         <li className="p-2 rounded hover:bg-white/10 cursor-pointer transition-colors">
           <IoChevronUpOutline className="w-4 h-4 text-white" />
