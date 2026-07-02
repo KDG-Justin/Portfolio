@@ -8,24 +8,30 @@ export interface WithChildren {
 }
 
 export function WindowsProvider({children} : WithChildren) {
+  const [currentOpenApp, setCurrentOpenApp] = useState<OpenApp>();
   const [openApps, setOpenApps] = useState<OpenApp[]>([]);
 
 
   // opens app on taskbar
   const openApplication = (app: OpenApp) => {
-    setOpenApps((prev) => {
-      if (prev.some((item) => item.id === app.id)) return prev;
+    setOpenApps((prev) => { 
+      if (prev.some((item) => item.id === app.id)){
+        setCurrentOpenApp(app); 
+        return prev;
+      }
+      setCurrentOpenApp(app); 
       return [...prev, app];
     });
   };
 
   // closes app from taskbar
   const closeApplication = (id: string | number) => {
+    setCurrentOpenApp(undefined); 
     setOpenApps((prev) => prev.filter((item) => item.id !== id));
   };
 
   return (
-    <WindowsContext.Provider value={{ openApps, openApplication, closeApplication }}>
+    <WindowsContext.Provider value={{ openApps, currentOpenApp, openApplication, closeApplication }}>
       {children}
     </WindowsContext.Provider>
   );

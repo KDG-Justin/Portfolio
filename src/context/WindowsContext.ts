@@ -9,6 +9,7 @@ export interface OpenApp {
 
 interface WindowsContextType {
   openApps: OpenApp[];
+  currentOpenApp: OpenApp | undefined;
   openApplication: (app: OpenApp) => void;
   closeApplication: (id: string | number) => void;
 }
