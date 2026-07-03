@@ -5,6 +5,7 @@ export interface OpenApp {
   id: string | number;
   name: string;
   icon: string; 
+  link: string; 
 }
 
 interface WindowsContextType {

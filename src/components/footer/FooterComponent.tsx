@@ -3,9 +3,11 @@ import { IoChevronUpOutline, IoWifiOutline, IoVolumeMediumOutline, IoBatteryFull
 import logo from "/windows11.svg";
 import { CurrentDateTime } from "./CurrentDateTime";
 import { useWindows } from "../../context/WindowsContextProvider";
+import { useNavigate } from "react-router-dom";
 
 export function FooterComponent() {
   const { openApps } = useWindows();
+  const navigate = useNavigate();
 
   return (
     <footer className="w-full grid grid-cols-[auto_1fr_auto] items-center px-4 py-1 border-t border-slate-700 bg-[#262626] text-white absolute bottom-0 left-0">
@@ -43,6 +45,7 @@ export function FooterComponent() {
                   cursor-pointer transition-all duration-150
                   bg-white/5
                 "
+                onClick={() => navigate(`/${app.link}`)}
               >
                 <img 
                   src={app.icon} 

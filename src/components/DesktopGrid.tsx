@@ -6,7 +6,7 @@ export function DesktopGrid() {
   const { openApplication } = useWindows(); 
 
   const desktopItems = [
-    { id: 1, name: "CV_JustinVanLeuvenum.pdf", icon: "/pdf-logo.png", linkTo: "cv" },
+    { id: 1, name: "CV.pdf", icon: "/pdf-logo.png", linkTo: "cv" },
     { id: 2, name: "AboutMe.txt", icon: "/txt-file.png", linkTo: "about" }
   ];
 
@@ -14,7 +14,8 @@ export function DesktopGrid() {
     openApplication({
       id: item.id,
       name: item.name,
-      icon: item.icon
+      icon: item.icon,
+      link: item.linkTo
     });
   };
 
