@@ -4,6 +4,7 @@ import { HomeScreen } from "./components/screens/HomeScreen";
 import { CvScreen } from "./components/screens/CvScreen";
 import { AboutScreen } from "./components/screens/about/AboutScreen";
 import { WindowsProvider } from "./context/WindowsContextProvider";
+import { SkillsScreen } from "./components/screens/SkillsScreen";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/home" element={<HomeScreen />} />
         <Route path="/cv" element={<CvScreen />} />
         <Route path="/about" element={<AboutScreen />} />
+        <Route path="/skills" element={<SkillsScreen />} />
       </Routes>
     </BrowserRouter>
     </WindowsProvider>

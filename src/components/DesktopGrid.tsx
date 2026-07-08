@@ -7,7 +7,8 @@ export function DesktopGrid() {
 
   const desktopItems = [
     { id: 1, name: "CV.pdf", icon: "/pdf-logo.png", linkTo: "cv" },
-    { id: 2, name: "AboutMe.txt", icon: "/txt-file.png", linkTo: "about" }
+    { id: 2, name: "AboutMe.txt", icon: "/txt-file.png", linkTo: "about" },
+    {id: 3, name: "Skills.exe", icon: "/", linkTo: "skills"}
   ];
 
   const handleItemClick = (item: typeof desktopItems[0]) => {
